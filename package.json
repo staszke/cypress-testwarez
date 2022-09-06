@@ -1,0 +1,18 @@
+{
+  "name": "cypress-enable-faster-execution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "staszke <stanislaw.rosada@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "10.4.0"
+  },
+  "scripts": {
+    "open": "yarn install & yarn cypress open",
+    "open:speed": "yarn open -C config/speedComparison.js",
+    "open:parallel": "yarn open -C config/parallel.js",
+    "test": "yarn install && yarn cypress run",
+    "test:speed": "yarn test -C config/speedComparison.js",
+    "test:parallel": "yarn test -C config/parallel.js"
+  }
+}
